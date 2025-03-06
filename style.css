@@ -1,40 +1,84 @@
-/* General styles */
+/* Grundläggande stil för body */
 body {
-    background-color: #d3d3d3; /* Gri deschis pentru fundal */
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: 'Quicksand', sans-serif; /* Använd Google Font */
     margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
-/* Letter (brevet) styling */
-.letter {
-    background-color: white;
-    width: 400px;
+header {
+    text-align: center;
+    background-color: #f8d7da;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+}
+
+.envelope {
+    width: 60%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px; /* Rundade hörn på själva kuvertet */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Skugga för att ge tredimensionell effekt */
     position: relative;
+    border: 2px solid #d1d1d1; /* Kuvertets kant */
 }
 
-/* Address styling */
-.address {
-    font-family: 'Dancing Script', cursive;
-    margin: 3em 2em 1em 4em;
-    border-bottom: 1px solid black;
-    padding-bottom: 5px;
-    font-size: 18px;
-}
-
-/* Stamp (frimärke) styling */
-.stamp {
-    width: 60px;
-    height: 60px;
-    background-color: red;
+/* Rektangulär form på kuvertet */
+.envelope:before {
+    content: "";
     position: absolute;
-    top: 10px;
-    right: 10px;
-    border-radius: 5px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 40px solid #fff;
+}
+
+/* Expeditor Section */
+.sender-section, .receiver-section {
+    margin-bottom: 20px;
+}
+
+.address {
+    padding-left: 4em; /* 4em avstånd till vänster */
+    padding-top: 3em;  /* 3em avstånd till toppen */
+    padding-right: 2em; /* 2em avstånd till höger */
+    padding-bottom: 1em; /* 1em avstånd till botten */
+    border-bottom: 1px solid #000; /* Understruken med border-bottom */
+    font-size: 1.2em; /* Större textstorlek */
+}
+
+/* Textspecifikationer för adressrader */
+.sender, .receiver {
+    font-size: 1.1em; /* Anpassad textstorlek för bättre läsbarhet */
+    font-weight: normal;
+}
+
+/* Frimärkespositionering */
+.stamp-section {
+    position: absolute; 
+    top: 10px;  
+    right: 10px; 
+    display: flex; 
+    gap: 5px; 
+}
+
+
+.stamp, .mail {
+    width: 50px; 
+    height: auto; 
+}
+
+
+.stamp-section {
+    flex-direction: column; 
+}
+
+/* För att justera det övergripande utseendet */
+h1 {
+    margin-bottom: 20px;
 }

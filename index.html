@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VintageLetter</title>
+    <title>VintageEnvelope</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,16 +13,29 @@
     
     <main>
         <div class="envelope">
-            <div class="address">
-                <p class="sender">From: John Doe, 123 Old Street, London</p>
-                <p class="receiver">To: Jane Smith, 456 Maple Ave, New York</p>
-            </div>
-            <div class="stamp">✉️</div>
+            <!-- Expeditor Section -->
+            <section class="sender-section">
+                <div class="address sender">
+                    <h2>From:</h2>
+                    <p>John Doe</p>
+                    <p>123 Old Street, London</p>
+                </div>
+            </section>
+
+            <!-- Receiver Section -->
+            <section class="receiver-section">
+                <div class="address receiver">
+                    <h2>To:</h2>
+                    <p>Jane Smith</p>
+                    <p>456 Maple Ave, New York</p>
+                </div>
+            </section>
+
+            <!-- Stamp Section -->
+            <section class="stamp-section">
+                <img src="stamp-image.jpg" alt="Vintage Stamp" class="stamp">
+            </section>
         </div>
     </main>
-    
-    <footer>
-        <p>© 2025 VintageLetter | Inspired by classic airmail ✈️</p>
-    </footer>
 </body>
 </html>

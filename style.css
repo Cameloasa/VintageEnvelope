@@ -1,0 +1,40 @@
+/* General styles */
+body {
+    background-color: #d3d3d3; /* Gri deschis pentru fundal */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Letter (brevet) styling */
+.letter {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Address styling */
+.address {
+    font-family: 'Dancing Script', cursive;
+    margin: 3em 2em 1em 4em;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+/* Stamp (frimärke) styling */
+.stamp {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+}
